@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Pilled Space</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.fontsource.org/inter/latin.css">
+    <style>
+        :root {
+            --btc-orange: #F7931A;
+            --btc-dark: #111111;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        .text-orange {
+            color: var(--btc-orange);
+        }
+        .bg-orange {
+            background-color: var(--btc-orange);
+        }
+        .border-orange {
+            border-color: var(--btc-orange);
+        }
+        .hover-bg-orange:hover {
+            background-color: var(--btc-orange);
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .zone-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .zone-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(247, 147, 26, 0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #F7931A, #FFD700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .manifesto-bg {
+            background-image: url("image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23F7931A' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-orange">🟠 OPS</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#manifesto" class="hover:text-orange px-3 py-2 rounded-md text-sm font-medium transition">Manifesto</a>
+                        <a href="#zones" class="hover:text-orange px-3 py-2 rounded-md text-sm font-medium transition">Zones</a>
+                        <a href="#layout" class="hover:text-orange px-3 py-2 rounded-md text-sm font-medium transition">Layout</a>
+                        <a href="#contact" class="bg-orange text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-opacity-90 transition">Visit Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-900/80 to-slate-900 z-10"></div>
+            <img src="https://image.qwenlm.ai/public_source/afe0fd1c-8674-424c-8396-2111de8327e1/1eb789cee-1915-4cda-921b-aac48c945c6f.png" alt="Orange Pilled Chair" class="w-full h-full object-cover opacity-40">
+        </div>
+        <div class="relative z-20 text-center px-4 max-w-4xl mx-auto fade-in">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+                ORANGE <span class="text-orange">PILLED</span> SPACE
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 mb-8 font-light">
+                From Fiat to Freedom. One Space, One Standard.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#zones" class="bg-orange text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-90 transition shadow-lg shadow-orange/20">
+                    Explore the Ecosystem
+                </a>
+                <a href="#manifesto" class="border border-slate-600 text-slate-300 px-8 py-3 rounded-full text-lg font-semibold hover:border-orange hover:text-orange transition">
+                    Read Manifesto
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manifesto / No Trading Zone -->
+    <section id="manifesto" class="py-20 manifesto-bg bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-orange font-bold tracking-widest uppercase text-sm">Core Philosophy</span>
+                <h2 class="text-3xl md:text-5xl font-bold mt-2">NO TRADING ZONE</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700">
+                        <div class="flex items-center mb-4">
+                            <span class="text-3xl mr-4">❌</span>
+                            <h3 class="text-xl font-bold text-red-400">DILARANG</h3>
+                        </div>
+                        <ul class="space-y-2 text-slate-400">
+                            <li>• No Charts</li>
+                            <li>• No Signals</li>
+                            <li>• No Pump & Dump Talk</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700">
+                        <div class="flex items-center mb-4">
+                            <span class="text-3xl mr-4">✅</span>
+                            <h3 class="text-xl font-bold text-green-400">FOKUS</h3>
+                        </div>
+                        <ul class="space-y-2 text-slate-300">
+                            <li>• Monetary System</li>
+                            <li>• Energy & Bitcoin</li>
+                            <li>• Sovereignty</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center md:text-left">
+                    <blockquote class="text-2xl md:text-3xl font-light italic text-slate-300 leading-relaxed">
+                        "Di sini kamu belajar <span class="text-orange font-bold">uang</span>, bukan ngejar <span class="text-orange font-bold">harga</span>."
+                    </blockquote>
+                    <p class="mt-6 text-slate-400">
+                        Proof of Work. Proof of Knowledge. We build the mindset from fiat to Bitcoin through education and experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zones Section -->
+    <section id="zones" class="py-24 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">MASTER ECOSYSTEM</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Integrated spaces designed to onboard minds, circulate value, and sustain life.</p>
+            </div>
+
+            <!-- Zone 1: Education Hub -->
+            <div class="zone-card bg-slate-900 rounded-3xl overflow-hidden mb-16 border border-slate-800">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-8 md:p-12 flex flex-col justify-center">
+                        <span class="text-orange font-bold mb-2">ZONE 01</span>
+                        <h3 class="text-3xl font-bold mb-6">RUMAH EDUKASI BITCOIN</h3>
+                        <p class="text-slate-400 mb-6">Tempat onboarding mindset → dari fiat ke Bitcoin.</p>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="bg-slate-800 p-4 rounded-lg">
+                                <h4 class="font-semibold text-orange">Library</h4>
+                                <p class="text-xs text-slate-400">The Bitcoin Standard, Layered Money, Inventing Bitcoin</p>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-lg">
+                                <h4 class="font-semibold text-orange">Video Wall</h4>
+                                <p class="text-xs text-slate-400">History of Money, Fiat vs BTC, Lightning Network</p>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-lg">
+                                <h4 class="font-semibold text-orange">Display</h4>
+                                <p class="text-xs text-slate-400">ASIC Miner Dummy (Energy → Hash → Block)</p>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-lg">
+                                <h4 class="font-semibold text-orange">Simulation</h4>
+                                <p class="text-xs text-slate-400">Trezor, Coldcard Hardware Wallets</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative h-64 lg:h-auto">
+                        <img src="https://image.qwenlm.ai/public_source/afe0fd1c-8674-424c-8396-2111de8327e1/1c16b65aa-6540-42f1-ba3f-a255549f2a3a.png" alt="Education Hub" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zone 2: Orange Pilled Chair -->
+            <div class="zone-card bg-slate-900 rounded-3xl overflow-hidden mb-16 border border-slate-800">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="relative h-64 lg:h-auto order-2 lg:order-1">
+                        <img src="https://image.qwenlm.ai/public_source/afe0fd1c-8674-424c-8396-2111de8327e1/1eb789cee-1915-4cda-921b-aac48c945c6f.png" alt="Orange Pilled Chair" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 md:p-12 flex flex-col justify-center order-1 lg:order-2">
+                        <span class="text-orange font-bold mb-2">ZONE 02</span>
+                        <h3 class="text-3xl font-bold mb-6">ORANGE PILLED CHAIR</h3>
+                        <p class="text-slate-400 mb-6">The Icon Experience. A centerpiece for awakening.</p>
+                        <ul class="space-y-4 mb-6">
+                            <li class="flex items-start">
+                                <span class="text-orange mr-3">💊</span>
+                                <div>
+                                    <h4 class="font-bold">Pil Orange</h4>
+                                    <p class="text-sm text-slate-400">Duduk = Siap berubah</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-orange mr-3">💉</span>
+                                <div>
+                                    <h4 class="font-bold">Suntikan Insight</h4>
+                                    <p class="text-sm text-slate-400">Cairan orange ke kursi = Insight masuk</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-orange mr-3">⚡</span>
+                                <div>
+                                    <h4 class="font-bold">Glow Effect</h4>
+                                    <p class="text-sm text-slate-400">Kabel listrik dari mini ASIC = Kesadaran aktif</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zone 3: UMKM Store -->
+            <div class="zone-card bg-slate-900 rounded-3xl overflow-hidden mb-16 border border-slate-800">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-8 md:p-12 flex flex-col justify-center">
+                        <span class="text-orange font-bold mb-2">ZONE 03</span>
+                        <h3 class="text-3xl font-bold mb-6">UMKM STORE</h3>
+                        <p class="text-slate-400 mb-6">Bitcoin Circular Economy. Closed loop mini-economy real.</p>
+                        <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 mb-6">
+                            <h4 class="text-orange font-bold mb-2">Payment System</h4>
+                            <div class="flex gap-4">
+                                <span class="bg-slate-700 px-3 py-1 rounded text-sm">Fedi</span>
+                                <span class="bg-slate-700 px-3 py-1 rounded text-sm">Wallet of Satoshi</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center p-4 bg-slate-800 rounded-lg">
+                                <span class="text-2xl">☕</span>
+                                <p class="text-sm mt-2">Kopi Lokal</p>
+                            </div>
+                            <div class="text-center p-4 bg-slate-800 rounded-lg">
+                                <span class="text-2xl">🟠</span>
+                                <p class="text-sm mt-2">Merchandise</p>
+                            </div>
+                        </div>
+                        <p class="mt-6 text-sm text-slate-500 italic">Flow: Customer → Bayar Sats → UMKM Terima → Diputar Lagi di Space</p>
+                    </div>
+                    <div class="relative h-64 lg:h-auto">
+                        <img src="https://image.qwenlm.ai/public_source/afe0fd1c-8674-424c-8396-2111de8327e1/1f5a6caee-53ae-4cd3-9213-c7a706232a6d.png" alt="UMKM Store" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zone 4: Farming -->
+            <div class="zone-card bg-slate-900 rounded-3xl overflow-hidden border border-slate-800">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="relative h-64 lg:h-auto">
+                        <img src="https://image.qwenlm.ai/public_source/afe0fd1c-8674-424c-8396-2111de8327e1/1cab19d67-476b-4bf5-b4ea-fb07bb605e62.png" alt="Farming Zone" class="absolute inset-0 w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 md:p-12 flex flex-col justify-center">
+                        <span class="text-orange font-bold mb-2">ZONE 04</span>
+                        <h3 class="text-3xl font-bold mb-6">INTEGRATED FARMING</h3>
+                        <p class="text-slate-400 mb-6">Wellness + Nature Balance. Sound Money = Sound Food System.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-xl">🐟</div>
+                                <div>
+                                    <h4 class="font-bold">Kolam Ikan</h4>
+                                    <p class="text-sm text-slate-400">Lele / Nila / Koi</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-xl">🌿</div>
+                                <div>
+                                    <h4 class="font-bold">Hydroponic</h4>
+                                    <p class="text-sm text-slate-400">Sayuran segar komunitas</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-xl">♻️</div>
+                                <div>
+                                    <h4 class="font-bold">Aquaponic</h4>
+                                    <p class="text-sm text-slate-400">Sistem sirkulasi air & nutrisi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zoning Layout -->
+    <section id="layout" class="py-20 bg-slate-900">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">ZONING LAYOUT</h2>
+                <p class="text-slate-400">Simple & Realistic Flow</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-slate-800 p-6 rounded-xl border-t-4 border-orange text-center">
+                    <div class="text-4xl mb-4">🏪</div>
+                    <h3 class="font-bold text-lg mb-2">DEPAN</h3>
+                    <p class="text-sm text-slate-400">Branding "Bitcoin Only"<br>UMKM Store + Kasir Sats</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border-t-4 border-orange text-center">
+                    <div class="text-4xl mb-4">🪑</div>
+                    <h3 class="font-bold text-lg mb-2">TENGAH</h3>
+                    <p class="text-sm text-slate-400">Coworking Space<br>Orange Chair Centerpiece</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border-t-4 border-orange text-center">
+                    <div class="text-4xl mb-4">📚</div>
+                    <h3 class="font-bold text-lg mb-2">SAMPING</h3>
+                    <p class="text-sm text-slate-400">Education Room<br>Library + Display</p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border-t-4 border-orange text-center">
+                    <div class="text-4xl mb-4"></div>
+                    <h3 class="font-bold text-lg mb-2">BELAKANG</h3>
+                    <p class="text-sm text-slate-400">Integrated Farming<br>Kolam Ikan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience & Footer -->
+    <footer id="contact" class="bg-slate-950 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-orange">TARGET USER</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-slate-300">
+                            <span class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center mr-4 text-sm">💻</span>
+                            Freelancer / Builder
+                        </li>
+                        <li class="flex items-center text-slate-300">
+                            <span class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center mr-4 text-sm">🧠</span>
+                            Beginner Bitcoin (New Orange)
+                        </li>
+                        <li class="flex items-center text-slate-300">
+                            <span class="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center mr-4 text-sm">🏢</span>
+                            Komunitas & Meetup
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-orange">VISIT US</h3>
+                    <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+                        <p class="text-slate-300 font-semibold mb-2">Orange Pilled Space</p>
+                        <p class="text-slate-400 text-sm mb-4">Jl. Daud No. 23, Tanah Kusir, Kebayoran Lama – Jakarta Selatan</p>
+                        <div class="flex gap-2">
+                            <span class="bg-slate-800 text-xs px-3 py-1 rounded-full text-slate-400">Geotagging</p>
+                            <span class="bg-slate-800 text-xs px-3 py-1 rounded-full text-slate-400">Map Location</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="flex gap-6 mb-4 md:mb-0">
+                    <span class="text-sm text-slate-500">"Belajar Bitcoin, Bukan Trading"</span>
+                    <span class="text-sm text-slate-500">"From Fiat to Freedom"</span>
+                </div>
+                <p class="text-sm text-slate-600">© 2026 Orange Pilled Space. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple scroll reveal animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.zone-card, .bg-slate-800').forEach(el => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
+
