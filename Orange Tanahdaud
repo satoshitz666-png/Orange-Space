@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orange Pilled Space | Manifesto</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.16/400.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.16/600.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.16/700.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            btc: '#F7931A',
+            btcDark: '#D27D15',
+            dark: '#080808',
+            surface: '#121212',
+            card: '#1A1A1A'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #080808; color: #E5E5E5; }
+    .glow-orange { box-shadow: 0 0 25px rgba(247, 147, 26, 0.5), 0 0 50px rgba(247, 147, 26, 0.2); }
+    .glow-pulse { animation: pulseGlow 4s ease-in-out infinite; }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 0 20px rgba(247, 147, 26, 0.4), 0 0 40px rgba(247, 147, 26, 0.1); transform: scale(1); }
+      50% { box-shadow: 0 0 35px rgba(247, 147, 26, 0.7), 0 0 70px rgba(247, 147, 26, 0.3); transform: scale(1.02); }
+    }
+    .reveal { opacity: 0; transform: translateY(20px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+    .gradient-text { background: linear-gradient(90deg, #F7931A, #FFD166); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .grid-bg { background-image: radial-gradient(#222 1px, transparent 1px); background-size: 32px 32px; }
+    .flow-line { position: relative; }
+    .flow-line::after { content: ''; position: absolute; top: 50%; left: 100%; width: 40px; height: 2px; background: #333; transform: translateY(-50%); }
+    @media (max-width: 768px) { .flow-line::after { display: none; } }
+  </style>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10" stroke="#F7931A" stroke-width="2"/>
+          <path d="M14.5 9.5L12.5 16.5M11 10L9 17" stroke="#F7931A" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="font-bold text-lg tracking-wide">ORANGE PILLED SPACE</span>
+      </div>
+      <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+        <a href="#manifesto" class="hover:text-btc transition-colors">Manifesto</a>
+        <a href="#zones" class="hover:text-btc transition-colors">Zones</a>
+        <a href="#ecosystem" class="hover:text-btc transition-colors">Ecosystem</a>
+        <a href="#location" class="hover:text-btc transition-colors">Location</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative min-h-screen flex flex-col justify-center items-center px-6 pt-20 grid-bg">
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-dark pointer-events-none"></div>
+    <div class="reveal relative z-10 text-center max-w-4xl mx-auto">
+      <div class="inline-block px-4 py-1 mb-6 border border-btc/30 rounded-full bg-btc/10 text-btc text-sm font-semibold tracking-wider">
+        EST. JAKARTA SELATAN
+      </div>
+      <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">
+        One Space. <span class="gradient-text">One Standard.</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
+        From Fiat to Freedom. A physical ecosystem for education, sovereignty, and circular Bitcoin economy.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#zones" class="px-8 py-4 bg-btc hover:bg-btcDark text-black font-bold rounded-lg transition-all transform hover:scale-105 glow-orange">
+          Explore the Space
+        </a>
+        <a href="#manifesto" class="px-8 py-4 border border-white/20 hover:border-btc text-white rounded-lg transition-all">
+          Read Manifesto
+        </a>
+      </div>
+    </div>
+    <div class="absolute bottom-10 animate-bounce">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F7931A" stroke-width="2" stroke-linecap="round"><path d="M7 10l5 5 5-5"/></svg>
+    </div>
+  </header>
+
+  <!-- Manifesto / No Trading Zone -->
+  <section id="manifesto" class="py-24 px-6 bg-surface border-t border-white/5">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <h2 class="text-4xl font-bold mb-6">The <span class="text-red-500">NO TRADING</span> Zone</h2>
+        <div class="space-y-4 text-gray-300 text-lg leading-relaxed">
+          <p class="flex items-start gap-3"><span class="text-red-500 text-2xl">✕</span> Charts, Signals, Pump & Dump talk</p>
+          <p class="flex items-start gap-3"><span class="text-red-500 text-2xl">✕</span> Altcoins & Memecoin speculation</p>
+          <div class="mt-8 p-6 border-l-4 border-btc bg-card rounded-r-lg">
+            <p class="text-xl font-semibold text-white italic">"Di sini kamu belajar uang, bukan ngejar harga."</p>
+            <p class="text-sm text-gray-500 mt-2">(Here you learn money, not chase price.)</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal grid grid-cols-2 gap-4">
+        <div class="p-6 bg-card rounded-xl border border-white/10 hover:border-btc/50 transition-colors text-center">
+          <div class="text-3xl font-bold text-btc mb-2">Monetary</div>
+          <div class="text-gray-400 text-sm">Sound Money System</div>
+        </div>
+        <div class="p-6 bg-card rounded-xl border border-white/10 hover:border-btc/50 transition-colors text-center">
+          <div class="text-3xl font-bold text-btc mb-2">Energy</div>
+          <div class="text-gray-400 text-sm">Hash & Proof of Work</div>
+        </div>
+        <div class="p-6 bg-card rounded-xl border border-white/10 hover:border-btc/50 transition-colors text-center">
+          <div class="text-3xl font-bold text-btc mb-2">Sovereignty</div>
+          <div class="text-gray-400 text-sm">Self-Custody & Keys</div>
+        </div>
+        <div class="p-6 bg-card rounded-xl border border-white/10 hover:border-btc/50 transition-colors text-center">
+          <div class="text-3xl font-bold text-btc mb-2">Education</div>
+          <div class="text-gray-400 text-sm">Proof of Knowledge</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zones Grid -->
+  <section id="zones" class="py-24 px-6 bg-dark">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16 reveal">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Zoning Layout</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">Simple & Realistic spatial design. Front to back flow optimized for learning, working, and thriving.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Education Hub -->
+        <div class="reveal zone-card p-8 bg-card rounded-2xl border border-white/10 flex flex-col">
+          <div class="w-14 h-14 rounded-xl bg-btc/10 flex items-center justify-center mb-6">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F7931A" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Education Hub</h3>
+          <p class="text-gray-400 mb-4 flex-grow">Onboarding from fiat mindset to Bitcoin sovereignty.</p>
+          <ul class="space-y-2 text-sm text-gray-300">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-btc rounded-full"></span> Library: Bitcoin Standard, Layered Money</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-btc rounded-full"></span> Wallet Simulation: Trezor, Coldcard</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-btc rounded-full"></span> Video Wall: History of Money & Lightning</li>
+          </ul>
+        </div>
+
+        <!-- Mining & Node -->
+        <div class="reveal zone-card p-8 bg-card rounded-2xl border border-white/10 flex flex-col">
+          <div class="w-14 h-14 rounded-xl bg-blue-500/10 flex items-center justify-center mb-6">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Mining & Node Zone</h3>
+          <p class="text-gray-400 mb-4 flex-grow">Physical demonstration of energy, hash, and consensus.</p>
+          <ul class="space-y-2 text-sm text-gray-300">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span> ASIC Miner Dummy (Flow: Energy → Hash → Block)</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span> Live Node Runner Dashboard</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span> Proof of Work Visualization</li>
+          </ul>
+        </div>
+
+        <!-- Orange Pilled Chair -->
+        <div class="reveal zone-card p-8 bg-card rounded-2xl border border-btc/30 flex flex-col relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-btc/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
+          <div class="w-14 h-14 rounded-xl bg-btc/20 flex items-center justify-center mb-6 glow-orange">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F7931A" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Orange Pilled Chair</h3>
+          <p class="text-gray-400 mb-4 flex-grow">The iconic centerpiece. Sit = Ready to change.</p>
+          <div class="p-3 bg-black/30 rounded-lg text-xs font-mono text-btc glow-pulse inline-block self-start">
+            ◆ Insight Injection | ◆ Glow Awakening | ◆ Active Consciousness
+          </div>
+        </div>
+
+        <!-- UMKM Store -->
+        <div class="reveal zone-card p-8 bg-card rounded-2xl border border-white/10 flex flex-col">
+          <div class="w-14 h-14 rounded-xl bg-green-500/10 flex items-center justify-center mb-6">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4ADE80" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          </div>
+          <h3 class="text-2xl font-bold mb-3">UMKM Circular Store</h3>
+          <p class="text-gray-400 mb-4 flex-grow">Bitcoin Circular Economy in action. Closed loop.</p>
+          <ul class="space-y-2 text-sm text-gray-300">
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-green-400 rounded-full"></span> Pay with Sats (Fediverse / Wallet of Satoshi)</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-green-400 rounded-full"></span> Local Coffee, Merch, Healthy Food</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-green-400 rounded-full"></span> Community wealth circulation</li>
+          </ul>
+        </div>
+
+        <!-- Integrated Farming & Aquatic -->
+        <div class="reveal zone-card p-8 bg-card rounded-2xl border border-white/10 flex flex-col lg:col-span-2">
+          <div class="flex flex-col md:flex-row md:items-center gap-6">
+            <div class="w-14 h-14 rounded-xl bg-teal-500/10 flex items-center justify-center flex-shrink-0">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2DD4BF" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </div>
+            <div class="flex-grow">
+              <h3 class="text-2xl font-bold mb-3">Integrated Farming & Aquatic Zone</h3>
+              <p class="text-gray-400 mb-4">Sound Money meets Sound Food System. Sustainable aquaponics & hydroponics.</p>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-3 gap-4 mt-2">
+            <div class="p-4 bg-surface rounded-lg border border-teal-500/20 text-center">
+              <div class="text-teal-400 font-semibold mb-1">Fish Pond</div>
+              <div class="text-xs text-gray-400">Lele / Nila / Koi</div>
+            </div>
+            <div class="p-4 bg-surface rounded-lg border border-teal-500/20 text-center">
+              <div class="text-teal-400 font-semibold mb-1">Hydroponic</div>
+              <div class="text-xs text-gray-400">Fresh Vegetables</div>
+            </div>
+            <div class="p-4 bg-surface rounded-lg border border-teal-500/20 text-center">
+              <div class="text-teal-400 font-semibold mb-1">Aquaponic</div>
+              <div class="text-xs text-gray-400">Closed Water Circulation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ecosystem Flow -->
+  <section id="ecosystem" class="py-24 px-6 bg-surface border-y border-white/5">
+    <div class="max-w-5xl mx-auto text-center reveal">
+      <h2 class="text-4xl font-bold mb-12">Economic Circular Flow</h2>
+      <div class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 text-center">
+        <div class="flow-line p-6 bg-card rounded-xl border border-white/10 w-64">
+          <div class="text-3xl mb-3">👤</div>
+          <h4 class="font-bold text-lg mb-1">Customer</h4>
+          <p class="text-sm text-gray-400">Pays in Sats via Lightning</p>
+        </div>
+        <div class="flow-line p-6 bg-card rounded-xl border border-white/10 w-64">
+          <div class="text-3xl mb-3">🏪</div>
+          <h4 class="font-bold text-lg mb-1">UMKM Store</h4>
+          <p class="text-sm text-gray-400">Receives & manages Sats</p>
+        </div>
+        <div class="flow-line p-6 bg-card rounded-xl border border-white/10 w-64">
+          <div class="text-3xl mb-3">♻️</div>
+          <h4 class="font-bold text-lg mb-1">Circulate</h4>
+          <p class="text-sm text-gray-400">Reinvests in space & local goods</p>
+        </div>
+        <div class="p-6 bg-card rounded-xl border border-btc/30 w-64 glow-pulse">
+          <div class="text-3xl mb-3">🌍</div>
+          <h4 class="font-bold text-lg mb-1 text-btc">Community</h4>
+          <p class="text-sm text-gray-400">Self-sustaining mini-economy</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Target & Footer -->
+  <footer id="location" class="py-20 px-6 bg-dark relative overflow-hidden">
+    <div class="absolute inset-0 grid-bg opacity-30"></div>
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="grid md:grid-cols-2 gap-12 mb-16">
+        <div class="reveal">
+          <h3 class="text-3xl font-bold mb-6">Target Community</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 bg-surface border border-white/10 rounded-full text-gray-300">Freelancer / Builder</span>
+            <span class="px-4 py-2 bg-surface border border-white/10 rounded-full text-gray-300">Beginner (New Orange)</span>
+            <span class="px-4 py-2 bg-surface border border-white/10 rounded-full text-gray-300">Community & Meetup</span>
+          </div>
+        </div>
+        <div class="reveal">
+          <h3 class="text-3xl font-bold mb-6">Location</h3>
+          <p class="text-gray-400 mb-2">Jl. Daud No. 23, Tanah Kusir</p>
+          <p class="text-gray-400 mb-4">Kebayoran Lama, Jakarta Selatan</p>
+          <div class="p-4 bg-surface rounded-lg inline-block border border-white/10">
+            <p class="font-mono text-btc text-sm">📍 Geotagging Active</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-center md:text-left">
+          <h2 class="text-2xl font-bold gradient-text mb-1">ORANGE PILLED SPACE</h2>
+          <p class="text-sm text-gray-500">From Fiat to Freedom. Proof of Work. Proof of Knowledge.</p>
+        </div>
+        <div class="flex gap-4 text-sm text-gray-400">
+          <a href="#" class="hover:text-btc transition-colors">Manifesto</a>
+          <a href="#" class="hover:text-btc transition-colors">Events</a>
+          <a href="#" class="hover:text-btc transition-colors">Contact</a>
+        </div>
+        <div class="text-xs text-gray-600">© 2026 Orange Pilled Space. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Intersection Observer for scroll reveal animations
+    document.addEventListener('DOMContentLoaded', () => {
+      const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
